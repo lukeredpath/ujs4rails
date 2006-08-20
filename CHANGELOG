@@ -1,0 +1,31 @@
+== rel-0.2.2
+* FIXED: Change the way tag_options detects javascript events, using blank? instead of include? as some Rails helpers insert an empty onclick handler.
+
+== rel-0.2.1
+* FIXED: Added an about.yml file - bad Luke - practice what you preach!
+
+* FIXED: Fixed the plugin in edge rails by explicitly requiring the controller file
+
+== rel-0.2
+
+* UPDATED: register_js_behaviour has been renamed to apply_behaviour and now takes an optional options hash and a block, which allows you to write your behaviours in pure Ruby. register_js_behaviour remains as an alias for backwards compatibility but is officially deprecated; it will probably be removed in the next release. There are also aliases for the American spelling of behaviour for our friends on the other side of the pond.
+
+* NEW: You can now attach behaviours directly to elements using content_tag and tag by passing in javascript event handlers in the HTML options hash (:onclick, :onmousedown etc.) - they'll be extracted to the external behaviours file automatically.
+
+* UPDATED: The core Rails AJAX/Javascript helpers (link_to_remote, button_to_function, link_to_function, form_remote_tag etc.) now work out of the box.
+
+* NEW: There is no need to explicitly specify an HTML ID for the elements you want to attach behaviour to - if you don't, one will be generated automatically for you.
+
+* NEW: Options to render behaviour rules directly in your page inside script blocks instead of in the external behaviour file.
+
+* FIXED: Behaviours inside AJAX-loaded partials will now work.
+
+* UPDATED: event:Selectors and domReady javascript libraries are replaced with the lowPro.js library by Dan Webb
+
+* UPDATED: Javascript behaviours now have access to a single variable - event. To access the element the event was applied to, use this.
+
+* UPDATED: Behaviours can now cancel the default action by returning false as well as using Event.stop(event)
+
+* FIXED: The required javascript files will be copied to your public folder automatically on installation. There is also a rake task for copying files across when upgrading the plugin.
+
+* NEW: Lots more documentation!

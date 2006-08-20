@@ -1,0 +1,6 @@
+author: Luke Redpath & Dan Webb
+summary: Makes adding javascript behaviour easy and enhances existing Rails javascript/ajax helpers.
+homepage: http://opensource.agileevolved.com/unobtrusivejs/
+plugin: http://opensource.agileevolved.com/svn/root/rails_plugins/unobtrusive_javascript/
+license: MIT
+version: 0.2.2
