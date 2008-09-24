@@ -1,3 +1,5 @@
+NOTE: THIS IS NO LONGER ACTIVELY MAINTAINED - PLEASE FORK!
+
 = Unobtrusive Javascript for Rails Version 0.2
 
 The Unobtrusive Javascript plugin for Rails allows you to attach Javascript behaviour and events to your page elements using pure Ruby, from within your controller or view, without clogging up your rendered HTML with Javascript - either inline or in the head of your document.
